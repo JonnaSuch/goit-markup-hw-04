@@ -281,7 +281,33 @@ button:hover {
   color: var(--color-third);
   padding-bottom: 30px;
 }
-
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 16px;
+  padding-bottom: 18px;
+}
+.social-media-button {
+  display: inline-flex;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--icon-bg);
+}
+.social-media-button:not(:last-child) {
+  margin-right: 10px;
+}
+.social-media-button:hover,
+.social-media-button:focus,
+.social-media-button:active {
+  background-color: #2196f3;
+  fill: #ffffff;
+}
 .footer {
   background-color: #2f303a;
   color: var(--color-secondary);
