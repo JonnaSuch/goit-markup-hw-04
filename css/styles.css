@@ -9,6 +9,8 @@
   --color-secondary: #060404;
   --color-third: #757575;
   --line: #ececec;
+  --icon-bg: #f5f4fa;
+  --svg-background: rgba(255, 255, 255, 0.1);
 }
 body {
   font-family: "Roboto", "Raleway", sans-serif;
@@ -108,6 +110,14 @@ button:hover {
   width: 58px;
   top: 32px;
   left: 55px;
+}
+.contact-link-icon {
+  margin-right: 10px;
+  fill: #757575;
+}
+.contact-link-icon:hover,
+.contact-link-icon:focus {
+  fill: #2166f3;
 }
 .menu {
   display: flex;
