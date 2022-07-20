@@ -9,7 +9,7 @@
   --color-secondary: #060404;
   --color-third: #757575;
   --line: #ececec;
-  --icon-bg: #f5f4fa;
+  --icon-bg: #afb1b8;
   --svg-background: rgba(255, 255, 255, 0.1);
 }
 body {
@@ -117,7 +117,7 @@ button:hover {
 }
 .contact-link-icon:hover,
 .contact-link-icon:focus {
-  fill: #2166f3;
+  fill: var(--brand-color);
 }
 .menu {
   display: flex;
@@ -305,8 +305,37 @@ button:hover {
 .social-media-button:hover,
 .social-media-button:focus,
 .social-media-button:active {
-  background-color: #2196f3;
+  background-color: var(--brand-color);
   fill: #ffffff;
+}
+.client {
+  font-size: 36px;
+  line-height: 1.17em;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-bottom: 50px;
+}
+.client-list {
+  display: flex;
+  margin-bottom: 94px;
+}
+.client-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  margin: 0 15px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: var(--icon-bg);
+}
+.client-list-item:hover,
+.client-list-item:focus {
+  fill: var(--brand-color);
+  border-color: var(--brand-color);
+  cursor: pointer;
 }
 .footer {
   background-color: #2f303a;
