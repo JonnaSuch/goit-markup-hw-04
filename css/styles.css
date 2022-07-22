@@ -8,6 +8,7 @@
   --brand-color: #2196f3;
   --color-secondary: #060404;
   --color-third: #757575;
+  --color-white: #ffffff;
   --line: #ececec;
   --icon-bg: #afb1b8;
   --svg-background: rgba(255, 255, 255, 0.1);
@@ -16,7 +17,7 @@ body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: #212121;
   border: 0;
-  background-color: #ffffff;
+  background-color: var(--color-white);
   width: 1600px;
   margin: 0 auto;
 }
@@ -31,7 +32,7 @@ img {
   text-decoration: none;
 }
 hr {
-  border: 1px solid #ececec;
+  border: 1px solid var(--line);
 }
 
 a:hover,
@@ -60,7 +61,7 @@ a:focus {
   text-decoration: none;
 }
 .header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--line);
 }
 .header .container {
   display: flex;
@@ -101,7 +102,7 @@ button:hover {
   color: var(--brand-color);
 }
 .second-link {
-  color: #757575;
+  color: var(--color-third);
   line-height: 1.14em;
   margin-right: 30px;
 }
@@ -113,11 +114,16 @@ button:hover {
 }
 .contact-link-icon {
   margin-right: 10px;
-  fill: #757575;
+  fill: var(--color-third);
 }
 .contact-link-icon:hover,
 .contact-link-icon:focus {
   fill: var(--brand-color);
+}
+.contact-link-icon-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .menu {
   display: flex;
@@ -146,13 +152,12 @@ button:hover {
   color: var(--brand-color);
 }
 .white-text {
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .main-section {
   background-color: #2f303a;
-  margin: auto;
-  display: block;
+  max-width: 1600px;
   background-image: url("../images/team.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -162,6 +167,7 @@ button:hover {
 .main-section-text {
   display: flex;
   align-items: center;
+  height: 600px;
   justify-content: center;
   flex-direction: column;
 }
@@ -171,28 +177,32 @@ button:hover {
   font-size: 44px;
   font-weight: 900;
   line-height: 1.363em;
+  letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
-  display: block;
-  padding-top: 106px;
   width: 696px;
+  margin-bottom: 30px;
 }
 
 .button-first {
   width: 200px;
+  height: 50px;
   border-radius: 4px;
-  margin-top: 30px;
-  margin-bottom: 200px;
   background-color: var(--brand-color);
   cursor: pointer;
   color: #fff;
   box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.15);
-  font-weight: 700;
   font-size: 16px;
-  border: none;
-  padding: 10px 41px 10px 42px;
+  border: 1px solid var(--brand-color);
 }
 
+.button-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: var(--color-white);
+}
 .list-lorem {
   display: flex;
 }
@@ -220,7 +230,7 @@ button:hover {
 .text {
   font-size: 14px;
   line-height: 1.71em;
-  color: #757575;
+  color: var(--color-third);
 }
 .first-lorem {
   display: flex;
@@ -306,7 +316,7 @@ button:hover {
 .social-media-button:focus,
 .social-media-button:active {
   background-color: var(--brand-color);
-  fill: #ffffff;
+  fill: var(--color-white);
 }
 .client {
   font-size: 36px;
@@ -361,10 +371,12 @@ button:hover {
   padding-bottom: 60px;
 }
 .address-color {
-  color: #ffffff;
+  color: var(--color-white);
   font-style: normal;
 }
-
+.footer-style {
+  display: flex;
+}
 .footer-list-item {
   margin-top: 9px;
 }
@@ -374,10 +386,45 @@ button:hover {
   color: rgba(255, 255, 255, 0.6);
   line-height: 24px;
 }
+.social-media-footer {
+  padding-left: 70px;
+  padding-top: 72px;
+}
+.social-media-footer-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+.social-media-footer-items {
+  display: flex;
+  padding-top: 20px;
+  gap: 10px;
+}
+.social-media-footer-item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  fill: var(--color-white);
+  border-radius: 50%;
+  background: var(--svg-background);
+}
+.social-media-footer-item:hover,
+.social-media-footer-item:focus {
+  background: var(--brand-color);
+  cursor: pointer;
+}
 
 .button-second:hover {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--brand-color);
+  color: var(--color-white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgb(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-second {
@@ -389,7 +436,6 @@ button:hover {
   letter-spacing: 0.03em;
   border-radius: 4px;
   border-style: none;
-
   padding: 6px 22px;
   background-color: #f5f4fa;
 }
@@ -412,8 +458,12 @@ button:hover {
 }
 .projects-item {
   display: flex;
-  background: #ffffff;
+  background: var(--color-white);
   margin-top: 30px;
+}
+.projects-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project-border {
   border: 1px solid #eeeeee;
