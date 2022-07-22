@@ -115,6 +115,8 @@ button:hover {
 .contact-link-icon {
   margin-right: 10px;
   fill: var(--color-third);
+  display: inline-flex;
+  align-self: center;
 }
 .contact-link-icon:hover,
 .contact-link-icon:focus {
@@ -134,10 +136,15 @@ button:hover {
   display: flex;
   font-size: 14px;
   line-height: 24px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0 15px;
 }
 .contact-list {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .logo {
   margin-right: 90px;
