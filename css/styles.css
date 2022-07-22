@@ -122,6 +122,9 @@ button:hover {
 .contact-link-icon:focus {
   fill: var(--brand-color);
 }
+.contact-list:hover svg {
+  fill: var(--brand-color);
+}
 .contact-link-icon-item {
   display: flex;
   justify-content: center;
@@ -136,10 +139,6 @@ button:hover {
   display: flex;
   font-size: 14px;
   line-height: 24px;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  padding: 0 15px;
 }
 .contact-list {
   display: flex;
